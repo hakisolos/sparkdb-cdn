@@ -1,0 +1,13 @@
+[Unit]
+Description=Sparkdb cdn
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/sparkdb-cdn
+ExecStart=/root/sparkdb-cdn/bin/app
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
