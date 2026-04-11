@@ -32,7 +32,7 @@ func randomID() string {
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "3000"
+		port = "6003"
 	}
 
 	err := os.MkdirAll(uploadDir, 0755)
